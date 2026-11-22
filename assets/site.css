@@ -214,3 +214,26 @@ dialog .plain li{padding:8px 0}
 @media (max-width:680px){.pmain{padding:18px 16px 24px}.pstat{grid-template-columns:1fr}}
 .tally[hidden]{display:none}
 .phase li .tag{display:inline-block;font-size:12.5px;color:var(--soft);margin:7px 5px 0 0}
+
+/* walk-through above the prototype */
+.walk{background:var(--surf);border:1px solid var(--line2);border-radius:18px;padding:24px 26px;margin-bottom:22px}
+.walk h2{font-size:27px;margin-bottom:8px}
+.walk .plain{font-size:19px;line-height:1.45;color:var(--paper);max-width:70ch}
+.walk .you{color:var(--muted);margin-top:8px;max-width:70ch}
+.walk ol{list-style:none;counter-reset:w;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 0}
+.walk li{counter-increment:w;background:var(--ink);border-radius:12px;padding:14px 16px;line-height:1.4;font-size:15.5px;color:var(--soft)}
+.walk li:before{content:counter(w);display:block;font-family:BG;font-stretch:88%;font-size:26px;line-height:1;color:var(--acc);margin-bottom:8px}
+.walk li b{color:var(--paper);font-weight:600}
+.walk .why{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line2);color:var(--soft);max-width:74ch}
+.walk .why b{color:var(--paper)}
+@media (max-width:1000px){.walk ol{grid-template-columns:1fr 1fr}}
+@media (max-width:680px){.walk ol{grid-template-columns:1fr}.walk{padding:18px 16px}}
+
+.walk .story{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:6px}
+.walk .story p{color:var(--soft);line-height:1.5;font-size:16.5px}
+.walk .story b{display:block;font-family:BG;font-stretch:88%;font-size:20px;letter-spacing:-.02em;color:var(--paper);margin-bottom:5px;line-height:1.15}
+.walk h3{margin:22px 0 0;font-size:20px}
+.walk .why{font-size:16.5px;line-height:1.5}
+@media (max-width:1000px){.walk .story{grid-template-columns:1fr;gap:14px}}
+.walk .story p{margin-top:0}
+.walk .why{max-width:none}
