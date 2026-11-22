@@ -9,7 +9,7 @@ NAV = [('index.html', 'The plan'), ('evidence.html', 'The evidence'), ('prototyp
 
 def page(fn, title, desc, body, script=''):
     nav = ''.join('<a href="%s"%s>%s</a>' % (h, ' aria-current="page"' if h == fn else '', t) for h, t in NAV)
-    out = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+    out = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><script>if(/thedigitalpolymath[.]com$/.test(location.hostname)){window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag("js",new Date());gtag("config","G-C206274WSE");var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-C206274WSE";document.head.appendChild(s)}</script>'
            '<meta name="robots" content="noindex,nofollow"><title>%s</title><meta name="description" content="%s">'
            '<link rel="stylesheet" href="assets/site.css"></head><body><a class="skip" href="#main">Skip to content</a>'
            '<div class="flag"><div class="w"><b>Unofficial.</b> A job application for Deepgram&rsquo;s Senior Product Manager, Enterprise role, built from public pages. Not affiliated with Deepgram.</div></div>'
